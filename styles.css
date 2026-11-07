@@ -6,7 +6,7 @@
 .container {
     height:100%;
     display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(0, 3fr);
+    grid-template-columns: 350px minmax(0, 3fr);
     grid-template-rows: 185px repeat(3, minmax(0, 1fr));
 }
 
@@ -111,12 +111,51 @@ button {
     padding: 0px 48px;
 }
 
+/* SIDEBAR */
 
 .sidebar {
     background-color: #1992d4;
     color: white;
     grid-row: 1 / -1;
     grid-column: 1 / 2;
+    font-weight: 500;
+
+    display: grid;
+    grid-template-rows: 50px 300px 1fr;
+    gap: 36px;
+    padding-left: 24px;
+    padding-top: 16px
+}
+
+svg {
+    height: 24px;
+}
+
+svg > path {
+    fill: white;
+}
+
+.title > svg {
+    height: 48px;
+}
+
+.title {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    font-size: 32px;
+}
+
+.item {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    font-size: 20px;
+    padding: 12px 0px;
+}
+
+.first {
+
 }
 
 /* MAIN CONTENT */
